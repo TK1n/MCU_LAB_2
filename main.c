@@ -182,6 +182,10 @@ int main(void)
 		  if (index_led >= MAX_LED) index_led = 0;
 		  update7SEG(index_led++);
 	  }
+	  if (timer3_flag == 1){
+            setTimer3(500);
+            HAL_GPIO_TogglePin(DOT_GPIO_Port, DOT_Pin);
+        }
     /* USER CODE BEGIN 3 */
   }
 
