@@ -157,6 +157,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   setTimer1(1);
   setTimer2(1);
+  setTimer3(1);
   int hour = 15, minute = 8, second = 50;
   while (1)
   {
